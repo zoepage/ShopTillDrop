@@ -1,0 +1,65 @@
+
+/** ---------------------------------------------------------------------- */
+/* @autor: Ola Gasidlo (o.gasidlo@gmail.com)
+/* ----------------------------------------------------------------------- */
+
+body, menu{
+    margin: 0;
+    padding: 0;
+  
+}
+
+.hide{
+    display:none;
+}
+
+/* -------------------------- LAYOUT / Structure -------------------------- */
+
+h1 {
+    width: 100%;
+    padding: 15px 10px;
+    margin:0;
+    font-weight: 500;
+    font-family: georgia;
+    font-size: 42px;
+}
+
+
+#list {
+    font-size: 18px;
+    font-family: tahoma;
+    margin:0;
+    padding:0;
+}
+
+    #list ul{
+        list-style: none;
+        margin:0;
+        padding:0;
+    }
+
+        #list ul li{
+            border-bottom: 1px solid;
+            padding: 15px 25px;
+
+        }
+
+            #list ul li.done{
+                text-decoration: line-through;
+                opacity: 0.5;
+            }
+
+/* -------------------------- COLOR / Themes -------------------------- */
+.mint{
+    color: #999 !important;
+}
+
+.mint h1 {
+    color: #fff !important; 
+    background-color: #70e8cc !important;
+   }
+
+.mint #list ul li{
+    border-color: #fff !important;
+    background: -webkit-linear-gradient(top, #fff 50%,#efefef 100%);
+}
