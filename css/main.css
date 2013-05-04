@@ -3,9 +3,10 @@
 /* @autor: Ola Gasidlo (o.gasidlo@gmail.com)
 /* ----------------------------------------------------------------------- */
 
-body, menu{
+body,h1, menu{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto Slab', arial,  serif;
   
 }
 
@@ -15,32 +16,65 @@ body, menu{
 
 /* -------------------------- LAYOUT / Structure -------------------------- */
 
-h1 {
+header {
     width: 100%;
-    padding: 15px 10px;
     margin:0;
-    font-weight: 500;
-    font-family: georgia;
+    font-weight: 700;
     font-size: 42px;
+    color: #fff !important; 
+    background: white url(../img/bg.png) fixed repeat-y;
 }
 
+menu {
+    position: fixed;
+    bottom: 0;
+    width:100%;
+}
+button {
+    width: 32%;
+    border: 1px solid #ebebeb;
+    height: 60px;
+    background: #ebebeb url(../img/btn_t.png) no-repeat;
+    letter-spacing: -9999px;
+    cursor: pointer;
+}
+    #new {
+        background-position: center 50%;
+    }
+
+    #remove {
+        background-position: center bottom;
+    }
+
+    #clear {
+        background-position: center top;
+    }
+     #send {
+        background-image:none;
+        letter-spacing: 1px;
+        height:30px;
+        width: 130px;
+        float: right;
+     }
 
 #list {
-    font-size: 18px;
-    font-family: tahoma;
+    font-size: 110%;
+    font-weight: 300;
     margin:0;
     padding:0;
+    background-color: #ebebeb;
 }
 
     #list ul{
         list-style: none;
         margin:0;
         padding:0;
+        color: #7b7b7b;
     }
 
         #list ul li{
-            border-bottom: 1px solid;
-            padding: 15px 25px;
+            border-bottom: 1px solid #fff;
+            padding: 12px 25px;
 
         }
 
@@ -49,17 +83,8 @@ h1 {
                 opacity: 0.5;
             }
 
+h1{
+    font-size: 90%
+}
+
 /* -------------------------- COLOR / Themes -------------------------- */
-.mint{
-    color: #999 !important;
-}
-
-.mint h1 {
-    color: #fff !important; 
-    background-color: #70e8cc !important;
-   }
-
-.mint #list ul li{
-    border-color: #fff !important;
-    background: -webkit-linear-gradient(top, #fff 50%,#efefef 100%);
-}

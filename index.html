@@ -9,27 +9,27 @@
 
     <!--     <link rel="stylesheet" href="css/reset2.css"> -->
         <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,700' rel='stylesheet' type='text/css'>
 
     </head>
     <body class="mint">
         <div id="list">
-            <h1>Einkaufsliste<br/>
-                <menu>
-                    <button id="new">NEW</button>
-                    <button id="remove">REMOVE</button>
-                    <button id="clear">CLEAR</button>
-                </menu>
+            <header>
+                <h1>&nbsp; killerList</h1>
                 <form id="newTask" class="hide">
                     <input type="text" id="task" title="Füge ein neues Item hinzu!" required autofocus placeholder="schreibe hier..." />
-                    <button>Senden</button>
+                    <button id="send">Senden</button>
                 </form>
-            </h1>
-
-
+           </header>
            <ul>
                
             </ul>
         </div>
+        <menu>
+            <button id="new">&nbsp; NEW</button>
+            <button id="remove">&nbsp; REMOVE</button>
+            <button id="clear">&nbsp; CLEAR</button>
+        </menu>
 
         <script src="js/jquery-1.9.1.min.js"></script>
         <script src="js/main.js"></script>
