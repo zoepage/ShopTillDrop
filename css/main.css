@@ -22,7 +22,8 @@ header {
     font-weight: 700;
     font-size: 42px;
     color: #fff !important; 
-    background: white url(../img/bg.png) fixed repeat-y;
+    background: #6b12ac url(../img/bg.png) fixed repeat-y;
+    padding-bottom: 10px;
 }
 
 menu {
@@ -31,11 +32,11 @@ menu {
     width:100%;
 }
 button {
-    width: 32%;
+    width: 33%;
     border: 1px solid #ebebeb;
     height: 60px;
     background: #ebebeb url(../img/btn_t.png) no-repeat;
-    letter-spacing: -9999px;
+    text-indent: -9999px;
     cursor: pointer;
 }
     #new {
@@ -52,9 +53,17 @@ button {
      #send {
         background-image:none;
         letter-spacing: 1px;
-        height:30px;
-        width: 130px;
-        float: right;
+        height:28px;
+        width: 18%;
+        text-indent: 0;
+        color: #7b7b7b;
+     }
+     input{
+        width: 80%;
+        height:26px;
+        border: 1px solid #ebebeb;
+        margin-left: 4px;
+        padding:0 4px;
      }
 
 #list {
