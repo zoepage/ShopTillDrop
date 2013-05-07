@@ -82,3 +82,4 @@
 		list.append('<li class="noItems"> Es wurden noch keine Items eingetragen.</li>');
 	});
 }());
+
