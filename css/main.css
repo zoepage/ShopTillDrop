@@ -3,12 +3,26 @@
 /* @autor: Ola Gasidlo (o.gasidlo@gmail.com)
 /* ----------------------------------------------------------------------- */
 
-body,h1, menu{
+html, body {
+    height: 100%;
+}
+
+body, h1, menu{
     margin: 0;
     padding: 0;
     font-family: 'Roboto Slab', arial,  serif;
     overflow: hidden;
   
+}
+
+#wrap {
+    min-height: 100%;
+    height:auto !important;
+    height:100%;
+    overflow: hidden !important;
+    position: absolute;
+    width: 100%;
+
 }
 
 .hide{
@@ -25,12 +39,15 @@ header {
     color: #fff !important; 
     background: #6b12ac url(../img/bg.png) fixed repeat-y;
     padding-bottom: 10px;
+    height: 80px;
 }
 
 menu {
     bottom: 0;
     width:100%;
     background-color: #dbdbdb;
+    height: 60px;
+    position: fixed;
 }
 button {
     width: 32%;
@@ -117,21 +134,25 @@ form > *{
        height:421px;
     }
     #list ul{
-        height:321px;
+        height:259px;
     }
 }
 
 @media (min-height: 481px) and (max-height: 640px) {
     #list {
-       height:501px;
+        height:511px;
     }
     #list ul{
-        height:411px;
+        height:418px;
     }
 }
 
 @media (min-height: 641px) {
-    #list, #list ul {
-       height: auto;
+    #list {
+        min-height: 641px;
+        max-height: 750px;;
+    }
+    #list ul{
+        height: 650px;
     }
 }
